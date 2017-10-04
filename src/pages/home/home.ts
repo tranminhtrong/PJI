@@ -8,12 +8,5 @@ import { LoginPage } from '../login/login';
   templateUrl: 'home.html'
 })
 export class HomePage {
-
-  constructor(public navCtrl: NavController) {
-
-  }
-
-  goTo(): void{
-    this.navCtrl.push(LoginPage);
-  }
+  constructor(){}
 }
