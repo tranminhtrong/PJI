@@ -10,6 +10,23 @@ a{
 .footer {
     position: fixed;
     height: 5%;
-    bottom: 0;
+    bottom: 2%;
     width: 90%;
+}
+.signin-btn{
+    bottom: 10%;
+    position: fixed;
+    border-radius: 25px;
+    left: 10%;
+    right: 10%;
+    width: 80%;
+    height: 7%;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F46F3F;
+}
+
+.home-text{
+    color: white;
 }
