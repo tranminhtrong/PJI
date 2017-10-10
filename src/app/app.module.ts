@@ -9,6 +9,8 @@ import { LoginPage } from '../pages/login/login';
 import { HomePage } from '../pages/home/home';
 import { ProductPage } from '../pages/product/product';
 import { UsersPage } from '../pages/users/users';
+import { SurveyPage } from '../pages/survey/survey';
+import { HistoryPage } from '../pages/history/history';
 import { TabsPage } from '../pages/navigations/tabs';
 
 @NgModule({
@@ -18,6 +20,8 @@ import { TabsPage } from '../pages/navigations/tabs';
     HomePage,
     ProductPage,
     UsersPage,
+    SurveyPage,
+    HistoryPage,
     LoginPage  
   ],
   imports: [
@@ -31,6 +35,8 @@ import { TabsPage } from '../pages/navigations/tabs';
     HomePage,
     ProductPage,
     UsersPage,
+    SurveyPage,
+    HistoryPage,
     LoginPage
   ],
   providers: [
