@@ -1,32 +1,81 @@
 .page-home {
-    background: url('/assets/images/HieuBackground.jpg');
-    background-size: 100% 100%;
-}
-a{
-    color: #ffffff;
-    font-weight: 900;
-    cursor: pointer;
-}
-.footer {
-    position: fixed;
-    height: 5%;
-    bottom: 2%;
-    width: 90%;
-}
-.signin-btn{
-    bottom: 10%;
-    position: fixed;
-    border-radius: 25px;
-    left: 10%;
-    right: 10%;
-    width: 80%;
-    height: 7%;
-    font-size: 20px;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #F46F3F;
+  background: url('/assets/images/HieuBackground.jpg');
+  background-size: 100% 100%;
 }
 
-.home-text{
+a {
+  color: #ffffff;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.footer {
+  position: fixed;
+  height: 5%;
+  bottom: 2%;
+  width: 90%;
+}
+
+.center-control {
+  position: fixed;
+  left: 10%;
+  right: 10%;
+  width: 80%;
+  height: 7%;
+  font-size: 20px;
+  border-radius: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+//---------------------------------------------------------------------------//
+.getstarted-btn {
+  bottom: 15%;
+  background-color: #F46F3F;
+  color: white;
+}
+
+.password {
+  color: white;
+  background: url('/assets/icon/password-128.png') no-repeat 5px 5px;
+  border-width: 0px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.2);
+  background-size: 32px 32px;
+  padding-left: 45px;
+  padding-top: 5px;
+  bottom: 25%;
+  @extend .center-control;
+}
+
+.password::-webkit-input-placeholder{
+    color: rgb(255, 255, 255);
+}
+
+.username{
     color: white;
+    background: url('/assets/icon/username-128.png') no-repeat 5px 5px;
+    border-width: 0px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.2);
+    background-size: 32px 32px;
+    padding-left: 45px;
+    padding-top: 5px;
+    bottom: 35%;
+    @extend .center-control;
+}
+
+.username::-webkit-input-placeholder{
+    color: rgb(255, 255, 255);
+}
+
+.logo{
+    background: url('/assets/icon/DXC-256.png') no-repeat;
+    background-size: 50% 120%;
+    bottom: 60%;
+    position: fixed;
+    width: 100%;
+    height: 20%;
+    left: 25%;
+    right: 25%;
 }

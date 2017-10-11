@@ -7,16 +7,16 @@
 </ion-header>-->
 
 <ion-content padding class="page-home">
-  <div class="center">
-    <button class="home-text signin-btn">Sign in</button>
-  </div>
-  <!--<button ion-button (click)="goTo()">NEXT PAGE</button>-->
+  <div class="logo"></div>
+  <input class="username" placeholder="Username"/>
+  <input class="password" placeholder="Password"/>
+    <button class="center-control getstarted-btn">Get Started</button>
   <div class="footer">
     <div class="pull-left">
-      <a class="">Create Account</a>
+      <a (click)="goToCreateAccount()">Create Account</a>
     </div>
     <div class="pull-right">
-      <a class="" (click)="goTo()">Need Help?</a>
+      <a (click)="goTo()">Need Help?</a>
     </div>
   </div>
 

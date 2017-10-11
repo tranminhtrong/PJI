@@ -12,6 +12,7 @@ import { UsersPage } from '../pages/users/users';
 import { SurveyPage } from '../pages/survey/survey';
 import { HistoryPage } from '../pages/history/history';
 import { TabsPage } from '../pages/navigations/tabs';
+import { CreateAccount } from '../pages/CreateAccount/CreateAccount';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { TabsPage } from '../pages/navigations/tabs';
     UsersPage,
     SurveyPage,
     HistoryPage,
-    LoginPage  
+    LoginPage ,
+    CreateAccount
   ],
   imports: [
     BrowserModule,
@@ -37,7 +39,8 @@ import { TabsPage } from '../pages/navigations/tabs';
     UsersPage,
     SurveyPage,
     HistoryPage,
-    LoginPage
+    LoginPage,
+    CreateAccount
   ],
   providers: [
     StatusBar,
