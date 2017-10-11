@@ -1,14 +1,14 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
-
 @Component({
-  selector: 'page-survey',
-  templateUrl: 'survey.html'
+  selector: 'page-history',
+  templateUrl: 'history.html'
 })
-export class SurveyPage {
+export class HistoryPage {
 
   constructor(public navCtrl: NavController) {
 
   }
+
 }
