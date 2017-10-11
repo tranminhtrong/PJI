@@ -6,16 +6,16 @@
     background-color: #fff;
 }
 .input-group-btn:last-child>.btn, .input-group-btn:last-child>.btn-group {
-    background-color: rgba(255, 116, 27, 1);
-    border-right-color:rgba(255, 116, 27, 1);
-    border-top-color:rgba(255, 116, 27, 1);
-    border-bottom-color:rgba(255, 116, 27, 1);
+    background-color: #ff9e48;
+    border-right-color:#ff9e48;
+    border-top-color:#ff9e48;
+    border-bottom-color:#ff9e48; //rgba(255, 116, 27, 1)
 }
 .input-group{
     border-radius: 2px;
 }
 .search-border {
-    border-color:rgba(255, 116, 27, 1);
+    border-color:#ff9e48;
 }
 .btn{
     color: #fff;
