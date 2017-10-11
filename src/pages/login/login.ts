@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
 import { TabsPage } from '../navigations/tabs';
+import { HomePage } from '../home/home';
 
 @Component({
   selector: 'page-login',
@@ -14,6 +15,7 @@ export class LoginPage {
   }
 
   goTo(): void{
-    this.navCtrl.push(TabsPage);
+    //this.navCtrl.push(TabsPage);
+    this.navCtrl.setRoot(HomePage);
   }
 }

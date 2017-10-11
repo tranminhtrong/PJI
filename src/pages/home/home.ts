@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+// import { NavController } from 'ionic-angular';
 
-import { LoginPage } from '../login/login';
+import { SurveyPage } from '../survey/survey';
+import { UsersPage } from '../users/users';
 
 @Component({
   selector: 'page-home',
@@ -9,11 +10,11 @@ import { LoginPage } from '../login/login';
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController) {
+  tab1: any;
+  tab2: any;
 
-  }
-
-  goTo(): void{
-    this.navCtrl.push(LoginPage);
+  constructor() {
+    this.tab1 = SurveyPage;
+    this.tab2 = UsersPage;
   }
 }
