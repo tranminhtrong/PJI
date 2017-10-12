@@ -3,10 +3,22 @@
     font-size: 100%;
     text-align: left;
 }
-ion-label.label.label-md {
+.label-md > h2 {
     font-size: 100%;
     font-weight: 700;
     line-height: 1;
     color: black;
-    text-align: left;
+    text-align: center;
 }
+
+// .label-md > h2 {
+//     font-size: 100%;
+//     font-weight: 700;
+//     line-height: 1;
+//     color: black;
+//     text-align: center;
+// }
+
+// .list-md > .item-md:nth-child(2n+1){
+//     background-color: rgba(0,0,0,.2) !important;
+// }
