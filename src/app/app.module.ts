@@ -13,7 +13,7 @@ import { SurveyPage } from '../pages/survey/survey';
 import { SurveyCreatePage } from '../pages/survey/create/survey-create';
 import { HistoryPage } from '../pages/history/history';
 import { TabsPage } from '../pages/navigations/tabs';
-import { CreateAccount } from '../pages/CreateAccount/CreateAccount';
+import { CreateAccount } from '../pages/create-account/create-account';
 
 @NgModule({
   declarations: [
