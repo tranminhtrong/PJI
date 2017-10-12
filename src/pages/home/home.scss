@@ -1,8 +1,12 @@
-#home-content {
-    padding-top: 10px;
+.home-poll-list {
+    color: rgba(255, 153, 0, 0.849) !important;
+    font-size: 100%;
+    text-align: left;
 }
-
-#homelbl1 {
-    color:  rgba(255, 153, 0, 0.849);
-    padding-left: 10px;
+ion-label.label.label-md {
+    font-size: 100%;
+    font-weight: 700;
+    line-height: 1;
+    color: black;
+    text-align: left;
 }
