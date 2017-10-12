@@ -12,7 +12,7 @@ a {
 .footer {
   position: fixed;
   height: 5%;
-  bottom: 2%;
+  bottom: 1%;
   width: 90%;
 }
 
@@ -28,45 +28,45 @@ a {
 }
 
 
+
 //---------------------------------------------------------------------------//
 .getstarted-btn {
   bottom: 15%;
   background-color: #F46F3F;
   color: white;
 }
+.getstarted-btn:hover, .getstarted-btn:active{
+  background-color: rgba(244, 108, 63, 0.5);
+}
 
 .password {
   color: white;
-  background: url('/assets/icon/password-128.png') no-repeat 5px 5px;
+  background: url('/assets/icon/password-128.png') no-repeat 3% 45%;
   border-width: 0px;
   background-color: rgba(255, 255, 255, 0.2);
   border-color: rgba(255, 255, 255, 0.2);
   background-size: 32px 32px;
-  padding-left: 45px;
+  padding-left: 11%;
   padding-top: 5px;
   bottom: 25%;
   @extend .center-control;
 }
 
-.password::-webkit-input-placeholder{
+.password::-webkit-input-placeholder, .username::-webkit-input-placeholder{
     color: rgb(255, 255, 255);
 }
 
 .username{
     color: white;
-    background: url('/assets/icon/username-128.png') no-repeat 5px 5px;
+    background: url('/assets/icon/username-128.png') no-repeat 3% 45%;
     border-width: 0px;
     background-color: rgba(255, 255, 255, 0.2);
     border-color: rgba(255, 255, 255, 0.2);
     background-size: 32px 32px;
-    padding-left: 45px;
+    padding-left: 11%;
     padding-top: 5px;
     bottom: 35%;
     @extend .center-control;
-}
-
-.username::-webkit-input-placeholder{
-    color: rgb(255, 255, 255);
 }
 
 .logo{

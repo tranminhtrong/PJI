@@ -1,8 +1,57 @@
 .terms-and-conditions {
-  position: fixed;
+  position: relative;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
-  vertical-align: middle;
   text-align: center;
+  left: 5%;
+}
+
+.navigation {
+  background: url('/assets/images/HieuBackground.jpg') no-repeat !important;
+  background-size: 100% 1600% !important;
+}
+
+.continue-btn {
+    bottom: 15%;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    @extend .center-control;
+  }
+
+.continue-btn:hover, .continue-btn:active{
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.email{
+    color: white;
+    background: url('/assets/icon/email-128.png') no-repeat 3% 45%;
+    border-width: 0px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.2);
+    background-size: 32px 32px;
+    padding-left: 11%;
+    padding-top: 5px;
+    bottom: 40%;
+    @extend .center-control;
+}
+
+.name{
+    color: white;
+    background: url('/assets/icon/name-128.png') no-repeat 3% 45%;
+    border-width: 0px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.2);
+    background-size: 32px 32px;
+    padding-left: 11%;
+    padding-top: 5px;
+    bottom: 50%;
+    @extend .center-control;
+}
+
+.email::-webkit-input-placeholder, .name::-webkit-input-placeholder{
+    color: white;
 }
