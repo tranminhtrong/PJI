@@ -10,6 +10,7 @@ import { HomePage } from '../pages/home/home';
 import { ProductPage } from '../pages/product/product';
 import { UsersPage } from '../pages/users/users';
 import { SurveyPage } from '../pages/survey/survey';
+import { SurveyCreatePage } from '../pages/survey/create/survey-create';
 import { HistoryPage } from '../pages/history/history';
 import { TabsPage } from '../pages/navigations/tabs';
 import { CreateAccount } from '../pages/CreateAccount/CreateAccount';
@@ -22,6 +23,7 @@ import { CreateAccount } from '../pages/CreateAccount/CreateAccount';
     ProductPage,
     UsersPage,
     SurveyPage,
+    SurveyCreatePage,
     HistoryPage,
     LoginPage ,
     CreateAccount
@@ -38,6 +40,7 @@ import { CreateAccount } from '../pages/CreateAccount/CreateAccount';
     ProductPage,
     UsersPage,
     SurveyPage,
+    SurveyCreatePage,
     HistoryPage,
     LoginPage,
     CreateAccount
