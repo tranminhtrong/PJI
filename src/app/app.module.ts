@@ -9,16 +9,18 @@ import { LoginPage } from '../pages/login/login';
 import { HomePage } from '../pages/home/home';
 import { ProductPage } from '../pages/product/product';
 import { UsersPage } from '../pages/users/users';
+import { SurveyPage } from '../pages/survey/survey';
 import { TabsPage } from '../pages/navigations/tabs';
 
 @NgModule({
   declarations: [
     MyApp,
-    TabsPage,
     HomePage,
     ProductPage,
     UsersPage,
-    LoginPage  
+    LoginPage,
+    SurveyPage,
+    TabsPage
   ],
   imports: [
     BrowserModule,
@@ -27,11 +29,12 @@ import { TabsPage } from '../pages/navigations/tabs';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    TabsPage,
     HomePage,
     ProductPage,
     UsersPage,
-    LoginPage
+    LoginPage,
+    SurveyPage,
+    TabsPage
   ],
   providers: [
     StatusBar,
