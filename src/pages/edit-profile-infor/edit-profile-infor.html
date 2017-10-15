@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      {{ item.title }}
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <!-- <p *ngIf="isEditPassword">password</p>
+    <p *ngIf="isEditEmail">email</p> -->
+  <div *ngIf="isEditPassword">
+    <ion-list>
+      <ion-item>
+        <ion-label stacked>Password</ion-label>
+        <ion-input type="password"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label stacked>Retype Password</ion-label>
+        <ion-input type="password"></ion-input>
+      </ion-item>
+    </ion-list>
+
+    <button ion-button>Save</button>
+  </div>
+  <div *ngIf="isEditEmail">
+    <ion-list>
+      <ion-item>
+        <ion-label stacked>Email</ion-label>
+        <ion-input type="email"></ion-input>
+      </ion-item>
+    </ion-list>
+    <button ion-button>Save</button>
+  </div>
+</ion-content>

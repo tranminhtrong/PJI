@@ -1,0 +1,58 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      My Profile
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<!-- <ion-content padding>
+  <ion-list>
+    <ion-item>
+      <ion-avatar item-start>
+        <img class="myprofile-photos" src="./assets/images/IMG_2807.JPG">
+      </ion-avatar>
+      <h2 class="myprofile-profilephotostext">Profile Photo</h2>
+    </ion-item>
+  </ion-list>
+  <ion-list>
+    <ion-item>
+      <ion-label stacked class="myprofile-profilephotostext">Username</ion-label>
+      <ion-input type="text" readonly="true" [(ngModel)]="username"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked class="myprofile-profilephotostext">Password</ion-label>
+      <ion-input type="password" name="txtPassword" ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked class="myprofile-profilephotostext">Retype Password</ion-label>
+      <ion-input type="password" name="txtRetyPassword" ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked class="myprofile-profilephotostext">Email</ion-label>
+      <ion-input type="email" name="txtEmail" [(ngModel)]="email"></ion-input>
+    </ion-item>
+  </ion-list>
+  <button ion-button name="btnUpdate">Update</button>
+</ion-content> -->
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-avatar item-start>
+        <img class="myprofile-photos" src="./assets/images/IMG_2807.JPG">
+      </ion-avatar>
+      <h2 class="myprofile-profilephotostext">Profile Photo</h2>
+    </ion-item>
+  </ion-list>
+  <ion-list>
+    <ion-item>
+      <p class="myprofile-profilephotostext">Hello {{username}} !</p>
+    </ion-item>
+  </ion-list>
+  <ion-list>
+    <button ion-item *ngFor="let item of items" (click)="openNavDetailsPage(item)">
+        <ion-label>{{item.title}}</ion-label>
+    </button>
+  </ion-list>
+</ion-content>
