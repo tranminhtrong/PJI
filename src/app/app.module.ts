@@ -8,19 +8,23 @@ import { MyApp } from './app.component';
 import { LoginPage } from '../pages/login/login';
 import { HomePage } from '../pages/home/home';
 import { ProductPage } from '../pages/product/product';
-import { UsersPage } from '../pages/users/users';
+import { UserRegisterPage } from '../pages/user-register/user-register';
 import { SurveyPage } from '../pages/survey/survey';
 import { TabsPage } from '../pages/navigations/tabs';
+import {MyProfilePage} from '../pages/my-profile/my-profile';
+import {EditProfileInfor} from '../pages/edit-profile-infor/edit-profile-infor';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     ProductPage,
-    UsersPage,
+    UserRegisterPage,
     LoginPage,
     SurveyPage,
-    TabsPage
+    TabsPage,
+    MyProfilePage,
+    EditProfileInfor
   ],
   imports: [
     BrowserModule,
@@ -31,10 +35,12 @@ import { TabsPage } from '../pages/navigations/tabs';
     MyApp,
     HomePage,
     ProductPage,
-    UsersPage,
+    UserRegisterPage,
     LoginPage,
     SurveyPage,
-    TabsPage
+    TabsPage,
+    MyProfilePage,
+    EditProfileInfor
   ],
   providers: [
     StatusBar,

@@ -86,3 +86,16 @@ $colors: (
 
 @import "roboto";
 @import "noto-sans";
+
+.label {
+  color: black;
+  display: inline-table;
+  font-size: 15px;
+  font-weight: normal;
+}
+.item-input .label-md,
+.item-select .label-md,
+.item-datetime .label-md {
+  color: black !important;
+  font-size: 15px !important;
+}

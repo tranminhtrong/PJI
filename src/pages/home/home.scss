@@ -1,14 +1,14 @@
-.home-poll-list {
-    color: rgba(255, 153, 0, 0.849) !important;
-    font-size: 100%;
-    text-align: left;
-}
 .label-md > h2 {
     font-size: 100%;
     font-weight: 700;
     line-height: 1;
     color: black;
-    text-align: center;
+    text-align: left;
+}
+.label-md > p {
+    font-weight: 100;
+    font-size: smaller;
+    text-align: left;
 }
 
 // .label-md > h2 {
