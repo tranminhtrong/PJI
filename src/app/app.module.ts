@@ -11,8 +11,9 @@ import { ProductPage } from '../pages/product/product';
 import { UserRegisterPage } from '../pages/user-register/user-register';
 import { SurveyPage } from '../pages/survey/survey';
 import { TabsPage } from '../pages/navigations/tabs';
-import {MyProfilePage} from '../pages/my-profile/my-profile';
-import {EditProfileInfor} from '../pages/edit-profile-infor/edit-profile-infor';
+import { MyProfilePage } from '../pages/my-profile/my-profile';
+import { EditProfileInfor } from '../pages/edit-profile-infor/edit-profile-infor';
+import { ManagePage } from '../pages/manage/manage';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import {EditProfileInfor} from '../pages/edit-profile-infor/edit-profile-infor';
     SurveyPage,
     TabsPage,
     MyProfilePage,
-    EditProfileInfor
+    EditProfileInfor,
+    ManagePage
   ],
   imports: [
     BrowserModule,
@@ -40,12 +42,13 @@ import {EditProfileInfor} from '../pages/edit-profile-infor/edit-profile-infor';
     SurveyPage,
     TabsPage,
     MyProfilePage,
-    EditProfileInfor
+    EditProfileInfor,
+    ManagePage
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    { provide: ErrorHandler, useClass: IonicErrorHandler }
   ]
 })
-export class AppModule {}
+export class AppModule { }
