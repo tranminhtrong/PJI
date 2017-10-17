@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
+import {SurveyCreate2Page} from '../create/survey-create-page2';
 import {} from '';
 
 @Component({
@@ -21,5 +22,9 @@ export class SurveyCreatePage {
 
   deleteAnswer(index) {
     this.answers.splice(index, 1);
+  }
+
+  nextPage(){
+    this.navCtrl.push(SurveyCreate2Page);
   }
 }
