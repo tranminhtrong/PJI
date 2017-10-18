@@ -1,0 +1,51 @@
+.toolbar-title-ios{
+    
+    color: rgba(255, 116, 27, 1);
+}
+.toolbar-background {
+    background-color: #fff;
+}
+.input-group-btn:last-child>.btn, .input-group-btn:last-child>.btn-group {
+    background-color: #ff9e48;
+    border-right-color:#ff9e48;
+    border-top-color:#ff9e48;
+    border-bottom-color:#ff9e48; //rgba(255, 116, 27, 1)
+}
+.input-group{
+    border-radius: 2px;
+}
+.search-border {
+    border-color:#ff9e48;
+}
+.btn{
+    color: #fff;
+}
+.list-data{
+    margin: 5px 0;
+
+}
+.item-data{
+    border-top: 1px solid rgb(232, 232, 232);
+    border-bottom: 1px solid rgb(232, 232, 232);
+    min-height: 50px;
+}
+.list-data-image{
+    background-color:black;
+    border-radius: 50%;
+    //max-width:80px;
+    max-height:80px;
+    margin: 5%;
+}
+.nopadding {
+    padding: 0 !important;
+    margin: 0 !important;
+ }
+ .item-data-detail{
+     color: #028fa7;
+     //margin: 25px;
+ }
+ .item-data-button{
+     background-color: #028fa7;
+     max-height: 100%;
+     max-width: 100%;
+ }

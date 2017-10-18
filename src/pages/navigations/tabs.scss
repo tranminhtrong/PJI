@@ -1,0 +1,16 @@
+
+.tabs-ios .tab-button {
+    color: rgba(255, 116, 27, 1); /*your  text color */
+    background: #ffffff; /* your background color*/
+}
+.tabs-ios .tab-button[aria-selected=true] {
+    color: rgba(255, 116, 27, 1); /*your  text color */
+    text-decoration: none;
+}
+.tabs-ios .tab-button[aria-selected=true] .tab-button-icon {
+    color: rgba(255, 116, 27, 1);
+    //border-bottom: 1.5px solid rgba(255, 116, 27, 1);
+}
+.tabs-ios .tab-button {
+    color: #8c8c8c;
+}

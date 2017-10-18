@@ -1,12 +1,109 @@
 <ion-header>
-    <ion-navbar>
-      <ion-title>
-        SURVEY PAGE
-      </ion-title>
+    <ion-navbar style="background-color: #fff">
+        <ion-title>
+            <h4 class="">Polls</h4>
+        </ion-title>
+        <ion-buttons end>
+            <button ion-button icon-only style="color: #ff9e48" (click)="create()">
+                <ion-icon name="ios-add-circle"></ion-icon>
+            </button>
+        </ion-buttons>
     </ion-navbar>
-  </ion-header>
-  
-  <ion-content padding>
-      <h1>SURVEY PAGE</h1>
-  </ion-content>
-  
+</ion-header>
+
+<ion-content>
+    <div class="">
+        <div class="" style="padding:5%;">
+            <div class="input-group">
+                <input type="text" class="form-control search-border" placeholder="Search for..." aria-label="Search for...">
+                <span class="input-group-btn ">
+                    <button class="btn">
+                        <span class="glyphicon glyphicon-search"></span>
+                    </button>
+                </span>
+            </div>
+        </div>
+
+        <div class="list-data">
+            <div class="item-data col-lg-12 col-md-12 col-sm-12 nopadding">
+                <!-- <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 nopadding">
+                    <img src="/assets/images/background2.jpg" alt="" class="list-data-image">
+                </div> -->
+
+                <div class="item-data-detail col-lg-10 col-md-10 col-sm-10 col-xs-10">
+                    <table>
+                        <tr>
+                            <td>
+                                <span style="font-size: 20px; font-weight: bold;">Title</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <i>12/07/2017</i>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <button (click)="goToDetailPage()" style="min-height:50px; background-color:#ff9e48; color:#fff" class="col-lg-2 col-md-2 col-sm-2 col-xs-2 nopadding">
+                    <span class="glyphicon glyphicon-check"></span>
+                </button>
+
+            </div>
+
+            <div class="item-data col-lg-12 col-md-12 col-sm-12 nopadding">
+                <!-- <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 nopadding">
+                    <img src="/assets/images/background2.jpg" alt="" class="list-data-image">
+                </div> -->
+
+                <div class="item-data-detail col-lg-10 col-md-10 col-sm-10 col-xs-10">
+                    <table>
+                        <tr>
+                            <td>
+                                <span style="font-size: 20px; font-weight: bold;">Title</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <i>12/07/2017</i>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <button style="min-height:50px; background-color:#ff9e48; color:#fff" class="col-lg-2 col-md-2 col-sm-2 col-xs-2 nopadding">
+                    <span class="glyphicon glyphicon-check"></span>
+                </button>
+
+            </div>
+
+            <div class="item-data col-lg-12 col-md-12 col-sm-12 nopadding">
+                <!-- <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 nopadding">
+                    <img src="/assets/images/background2.jpg" alt="" class="list-data-image">
+                </div> -->
+
+                <div class="item-data-detail col-lg-10 col-md-10 col-sm-10 col-xs-10">
+                    <table>
+                        <tr>
+                            <td>
+                                <span style="font-size: 20px; font-weight: bold;">Title</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <i>12/07/2017</i>
+                            </td>
+                        </tr>
+                    </table>
+                    <!-- <p>
+                        
+                        
+                    </p> -->
+
+                </div>
+                <button style="min-height:50px; background-color:#ff9e48; color:#fff" class="col-lg-2 col-md-2 col-sm-2 col-xs-2 nopadding">
+                    <span class="glyphicon glyphicon-check"></span>
+                </button>
+
+            </div>
+        </div>
+    </div>
+</ion-content>
