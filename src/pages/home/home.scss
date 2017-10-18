@@ -1,15 +1,24 @@
-.page-home {
-    background: url('/assets/images/background2.jpg');
-    background-size: 100% 100%;
+.label-md > h2 {
+    font-size: 100%;
+    font-weight: 700;
+    line-height: 1;
+    color: black;
+    text-align: left;
 }
-a{
-    color: #ffffff;
-    font-weight: 900;
-    cursor: pointer;
+.label-md > p {
+    font-weight: 100;
+    font-size: smaller;
+    text-align: left;
 }
-.footer {
-    position: fixed;
-    height: 5%;
-    bottom: 0;
-    width: 90%;
-}
+
+// .label-md > h2 {
+//     font-size: 100%;
+//     font-weight: 700;
+//     line-height: 1;
+//     color: black;
+//     text-align: center;
+// }
+
+// .list-md > .item-md:nth-child(2n+1){
+//     background-color: rgba(0,0,0,.2) !important;
+// }

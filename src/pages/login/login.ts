@@ -13,7 +13,11 @@ export class LoginPage {
 
   }
 
-  goTo(): void{
-    this.navCtrl.push(TabsPage);
+  goTo(event, item): void{
+    this.navCtrl.push(TabsPage, {
+      item: item
+    });
+    // this.navCtrl.push(HomePage);
+    //this.navCtrl.setRoot(HomePage);
   }
 }

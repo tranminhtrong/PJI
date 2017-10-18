@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
-import { ProductPage } from '../product/product';
-import { UsersPage } from '../users/users';
+import { HomePage } from '../home/home';
 import { SurveyPage } from '../survey/survey';
 import { HistoryPage } from '../history/history';
+import { MyProfilePage } from '../my-profile/my-profile';
 
 @Component({
     selector: 'page-tabs',
@@ -12,13 +12,16 @@ import { HistoryPage } from '../history/history';
 })
 export class TabsPage {
 
-    tab1 = ProductPage;
-    tab2 = SurveyPage;
-    tab3 = HistoryPage;
-    tab4 = UsersPage;
+    tab1: any;
+    tab2: any;
+    tab3: any;
+    tab4: any;
 
     constructor(public navCtrl: NavController) {
-
+        this.tab1 = HomePage;
+        this.tab2 = SurveyPage;
+        this.tab3 = HistoryPage;
+        this.tab4 = MyProfilePage;
     }
 
 }

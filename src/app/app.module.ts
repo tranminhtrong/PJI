@@ -16,17 +16,18 @@ import { SurveyCreate2Page } from '../pages/survey/create/survey-create-page2';
 import { SurveyDetailPage } from '../pages/survey/detail/survey-detail';
 import { SurveyDetailChartPage } from '../pages/survey/detail/survey-detail-chart';
 import { HistoryPage } from '../pages/history/history';
+import { UserRegisterPage } from '../pages/user-register/user-register';
 import { TabsPage } from '../pages/navigations/tabs';
+import {MyProfilePage} from '../pages/my-profile/my-profile';
+import {EditProfileInfor} from '../pages/edit-profile-infor/edit-profile-infor';
 
 import {TimerComponent} from "../components/timer/timer";
 
 @NgModule({
   declarations: [
     MyApp,
-    TabsPage,
     HomePage,
     ProductPage,
-    UsersPage,
     SurveyPage,
     SurveyCreatePage,
     SurveyCreate2Page,
@@ -35,6 +36,11 @@ import {TimerComponent} from "../components/timer/timer";
     HistoryPage,
     TimerComponent,
     LoginPage  
+    UserRegisterPage,
+    LoginPage,
+    TabsPage,
+    MyProfilePage,
+    EditProfileInfor
   ],
   imports: [
     BrowserModule,
@@ -44,10 +50,8 @@ import {TimerComponent} from "../components/timer/timer";
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    TabsPage,
     HomePage,
     ProductPage,
-    UsersPage,
     SurveyPage,
     SurveyCreatePage,
     SurveyCreate2Page,
@@ -55,6 +59,10 @@ import {TimerComponent} from "../components/timer/timer";
     SurveyDetailChartPage,
     HistoryPage,
     LoginPage
+    UserRegisterPage,
+    TabsPage,
+    MyProfilePage,
+    EditProfileInfor
   ],
   providers: [
     StatusBar,
