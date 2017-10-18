@@ -9,7 +9,6 @@ import { MyApp } from './app.component';
 import { LoginPage } from '../pages/login/login';
 import { HomePage } from '../pages/home/home';
 import { ProductPage } from '../pages/product/product';
-import { UsersPage } from '../pages/users/users';
 import { SurveyPage } from '../pages/survey/survey';
 import { SurveyCreatePage } from '../pages/survey/create/survey-create';
 import { SurveyCreate2Page } from '../pages/survey/create/survey-create-page2';
@@ -18,10 +17,10 @@ import { SurveyDetailChartPage } from '../pages/survey/detail/survey-detail-char
 import { HistoryPage } from '../pages/history/history';
 import { UserRegisterPage } from '../pages/user-register/user-register';
 import { TabsPage } from '../pages/navigations/tabs';
-import {MyProfilePage} from '../pages/my-profile/my-profile';
-import {EditProfileInfor} from '../pages/edit-profile-infor/edit-profile-infor';
+import { MyProfilePage } from '../pages/my-profile/my-profile';
+import { EditProfileInfor } from '../pages/edit-profile-infor/edit-profile-infor';
 
-import {TimerComponent} from "../components/timer/timer";
+import { TimerComponent } from "../components/timer/timer";
 
 @NgModule({
   declarations: [
@@ -35,7 +34,7 @@ import {TimerComponent} from "../components/timer/timer";
     SurveyDetailChartPage,
     HistoryPage,
     TimerComponent,
-    LoginPage  
+    LoginPage,  
     UserRegisterPage,
     LoginPage,
     TabsPage,
@@ -58,7 +57,7 @@ import {TimerComponent} from "../components/timer/timer";
     SurveyDetailPage,
     SurveyDetailChartPage,
     HistoryPage,
-    LoginPage
+    LoginPage,
     UserRegisterPage,
     TabsPage,
     MyProfilePage,
@@ -67,7 +66,7 @@ import {TimerComponent} from "../components/timer/timer";
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    { provide: ErrorHandler, useClass: IonicErrorHandler }
   ]
 })
-export class AppModule {}
+export class AppModule { }
