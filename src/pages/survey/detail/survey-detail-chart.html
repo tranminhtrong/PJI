@@ -1,0 +1,21 @@
+<ion-header>
+    <ion-navbar style="background-color: #fff">
+        <ion-title>
+            <h4 class="">Poll Chart</h4>
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="margin-top: 10px">
+        <div style="display: block; height: 350px">
+            <canvas baseChart 
+                [data]="pieChartData" 
+                [labels]="pieChartLabels" 
+                [chartType]="pieChartType" 
+                [options]="options"
+                (chartHover)="chartHovered($event)"
+                (chartClick)="chartClicked($event)"></canvas>
+        </div>
+    </div>
+</ion-content>

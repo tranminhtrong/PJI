@@ -1,7 +1,7 @@
 <ion-header>
     <ion-navbar style="background-color: #fff">
         <ion-title>
-            <h4 class="" >Survey</h4>
+            <h4 class="">Polls</h4>
         </ion-title>
         <ion-buttons end>
             <button ion-button icon-only style="color: #ff9e48" (click)="create()">
@@ -17,7 +17,7 @@
             <div class="input-group">
                 <input type="text" class="form-control search-border" placeholder="Search for..." aria-label="Search for...">
                 <span class="input-group-btn ">
-                    <button class="btn" >
+                    <button class="btn">
                         <span class="glyphicon glyphicon-search"></span>
                     </button>
                 </span>
@@ -26,63 +26,80 @@
 
         <div class="list-data">
             <div class="item-data col-lg-12 col-md-12 col-sm-12 nopadding">
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 nopadding">
+                <!-- <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 nopadding">
                     <img src="/assets/images/background2.jpg" alt="" class="list-data-image">
-                </div>
+                </div> -->
 
-                <div class="item-data-detail col-lg-7 col-md-7 col-sm-7 col-xs-7 nopadding">
-                    <p style="font-size: 23px; font-weight: bold;">Title</p>
-                    <!-- <p>
-                        <b>Created Date:</b>
-                        <i>12/07/2017</i>
-                        <br>
-                        <span>
-                            <b>User:</b> Jimmy</span>
-                    </p> -->
+                <div class="item-data-detail col-lg-10 col-md-10 col-sm-10 col-xs-10">
+                    <table>
+                        <tr>
+                            <td>
+                                <span style="font-size: 20px; font-weight: bold;">Title</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <i>12/07/2017</i>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
-                <button style="min-height:93px; background-color:#ff9e48; color:#fff" class="col-lg-2 col-md-2 col-sm-2 col-xs-2 nopadding">
+                <button (click)="goToDetailPage()" style="min-height:50px; background-color:#ff9e48; color:#fff" class="col-lg-2 col-md-2 col-sm-2 col-xs-2 nopadding">
                     <span class="glyphicon glyphicon-check"></span>
                 </button>
 
             </div>
 
             <div class="item-data col-lg-12 col-md-12 col-sm-12 nopadding">
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 nopadding">
+                <!-- <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 nopadding">
                     <img src="/assets/images/background2.jpg" alt="" class="list-data-image">
-                </div>
+                </div> -->
 
-                <div class="item-data-detail col-lg-7 col-md-7 col-sm-7 col-xs-7 nopadding">
-                    <p style="font-size: 23px; font-weight: bold;">Title</p>
-                    <!-- <p>
-                        <b>Created Date:</b>
-                        <i>12/07/2017</i>
-                        <br>
-                        <span>
-                            <b>User:</b> Jimmy</span>
-                    </p> -->
+                <div class="item-data-detail col-lg-10 col-md-10 col-sm-10 col-xs-10">
+                    <table>
+                        <tr>
+                            <td>
+                                <span style="font-size: 20px; font-weight: bold;">Title</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <i>12/07/2017</i>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
-                <button style="min-height:92px; background-color:#ff9e48; color:#fff" class="col-lg-2 col-md-2 col-sm-2 col-xs-2 nopadding">
+                <button style="min-height:50px; background-color:#ff9e48; color:#fff" class="col-lg-2 col-md-2 col-sm-2 col-xs-2 nopadding">
                     <span class="glyphicon glyphicon-check"></span>
                 </button>
 
             </div>
 
             <div class="item-data col-lg-12 col-md-12 col-sm-12 nopadding">
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 nopadding">
+                <!-- <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 nopadding">
                     <img src="/assets/images/background2.jpg" alt="" class="list-data-image">
-                </div>
+                </div> -->
 
-                <div class="item-data-detail col-lg-7 col-md-7 col-sm-7 col-xs-7 nopadding">
-                    <p style="font-size: 23px; font-weight: bold;">Title</p>
-                    <p>
-                        <b>Date:</b>
-                        <i>12/07/2017</i>
-                        <!-- <br>
-                        <span>
-                            <b>User:</b> Jimmy</span> -->
-                    </p>
+                <div class="item-data-detail col-lg-10 col-md-10 col-sm-10 col-xs-10">
+                    <table>
+                        <tr>
+                            <td>
+                                <span style="font-size: 20px; font-weight: bold;">Title</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <i>12/07/2017</i>
+                            </td>
+                        </tr>
+                    </table>
+                    <!-- <p>
+                        
+                        
+                    </p> -->
+
                 </div>
-                <button style="min-height:92px; background-color:#ff9e48; color:#fff" class="col-lg-2 col-md-2 col-sm-2 col-xs-2 nopadding">
+                <button style="min-height:50px; background-color:#ff9e48; color:#fff" class="col-lg-2 col-md-2 col-sm-2 col-xs-2 nopadding">
                     <span class="glyphicon glyphicon-check"></span>
                 </button>
 

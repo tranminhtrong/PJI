@@ -27,7 +27,7 @@
 .item-data{
     border-top: 1px solid rgb(232, 232, 232);
     border-bottom: 1px solid rgb(232, 232, 232);
-    min-height: 95px;
+    min-height: 50px;
 }
 .list-data-image{
     background-color:black;
@@ -42,6 +42,7 @@
  }
  .item-data-detail{
      color: #028fa7;
+     //margin: 25px;
  }
  .item-data-button{
      background-color: #028fa7;

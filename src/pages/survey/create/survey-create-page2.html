@@ -21,11 +21,11 @@
     <!-- <h3 class="text-center" style="color: #ff741b"></h3> -->
     <ion-item>
         <ion-label class="label">Include an "Other, please specify:" text box</ion-label>
-        <ion-checkbox checked="true"></ion-checkbox>
+        <ion-checkbox checked="includeChecked" [(ngModel)]="includeChecked"></ion-checkbox>
     </ion-item>
     <ion-item>
         <ion-label class="">Allow multiple selections</ion-label>
-        <ion-checkbox checked="true"></ion-checkbox>
+        <ion-checkbox checked="allowChecked" [(ngModel)]="allowChecked" (ionChange)="change(allowChecked)"></ion-checkbox>
     </ion-item>
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 bottom" style="margin: 3% 0;">
         <button class="btn btn-primary form-control">Save</button>
