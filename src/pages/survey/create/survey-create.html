@@ -1,0 +1,51 @@
+<ion-header>
+    <ion-navbar style="background-color: #fff">
+        <ion-title>
+            <h4 class="">Building A Poll</h4>
+        </ion-title>
+        <!-- <ion-buttons end>
+            <button class="btn btn-success">
+                NEXT
+            </button>
+        </ion-buttons> -->
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h3>Poll Question: </h3>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <input type="text" class="form-control" />
+        </div>
+    </div>
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h3>Answer Choices: </h3>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="input-group" style="margin: 3% 0;" *ngFor="let item of answers; let i = index;">
+                <span class="input-group-addon" id="basic-addon1">{{i+1}}</span>
+                <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon1">
+                <span class="input-group-btn">
+                    <button class="btn btn-secondary" type="button" (click)="deleteAnswer(i)">X</button>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="margin: 3% 0;">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <button class="btn btn-blue form-control" (click)="createAnswer()">Create other answer</button>
+        </div>
+    </div>
+
+
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="margin: 3% 0;" [hidden]="showNextButton">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <button type="button" class="btn btn-success form-control" (click)="nextPage()">Next</button>
+        </div>
+    </div>
+
+</ion-content>
