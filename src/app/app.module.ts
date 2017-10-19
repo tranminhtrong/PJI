@@ -19,8 +19,8 @@ import { UserRegisterPage } from '../pages/user-register/user-register';
 import { TabsPage } from '../pages/navigations/tabs';
 import { MyProfilePage } from '../pages/my-profile/my-profile';
 import { EditProfileInfor } from '../pages/edit-profile-infor/edit-profile-infor';
-
 import { TimerComponent } from "../components/timer/timer";
+import { ManagePage } from '../pages/manage/manage';
 
 @NgModule({
   declarations: [
@@ -39,7 +39,8 @@ import { TimerComponent } from "../components/timer/timer";
     LoginPage,
     TabsPage,
     MyProfilePage,
-    EditProfileInfor
+    EditProfileInfor,
+    ManagePage
   ],
   imports: [
     BrowserModule,
@@ -61,7 +62,8 @@ import { TimerComponent } from "../components/timer/timer";
     UserRegisterPage,
     TabsPage,
     MyProfilePage,
-    EditProfileInfor
+    EditProfileInfor,
+    ManagePage
   ],
   providers: [
     StatusBar,

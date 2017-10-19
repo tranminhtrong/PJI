@@ -9,7 +9,5 @@ import { NavController } from 'ionic-angular';
   templateUrl: 'manage.html'
 })
 export class ManagePage {
-  constructor() {
-
-  }
+  constructor(){}
 }
