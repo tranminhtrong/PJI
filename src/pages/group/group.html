@@ -1,0 +1,32 @@
+<ion-header>
+    <ion-navbar style="background-color: #fff">
+        <ion-title>
+            <h4>Group</h4>
+        </ion-title>
+        <ion-buttons end>
+            <button ion-button icon-only style="color: #ff9e48" (click)="goNewGroup()">
+                <ion-icon name="ios-add-circle"></ion-icon>
+            </button>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
+<ion-content class="group-background">
+    <div *ngIf="isNewGroup">
+            <h2>New Group</h2>
+            <ion-list class="group-card">
+                <ion-item>
+                    <ion-label stacked>Group ID</ion-label>
+                    <ion-input type="password"></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-label stacked>Group name</ion-label>
+                    <ion-input type="text"></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-label>Is active</ion-label>
+                    <ion-checkbox checked="true"></ion-checkbox>
+                </ion-item>
+            </ion-list>
+            <button ion-button (click)="goSave()">Save</button>
+    </div>
+</ion-content>

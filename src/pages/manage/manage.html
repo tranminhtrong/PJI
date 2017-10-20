@@ -1,10 +1,10 @@
 <ion-header>
     <ion-navbar>
-      <ion-title>
-        Manage
-      </ion-title>
+        <ion-title>
+            Manage
+        </ion-title>
     </ion-navbar>
-  </ion-header>
+</ion-header>
 <ion-content>
     <div class="align-box">
         <button ion-button icom-left outline round>
@@ -14,6 +14,10 @@
         <button ion-button icom-left outline round>
             <ion-icon name="people"></ion-icon>
             Group
+        </button>
+        <button ion-button icom-left outline round (click)="logout()">
+            <ion-icon name="log-out"></ion-icon>
+            Log out
         </button>
     </div>
 </ion-content>

@@ -8,7 +8,6 @@ import { ChartsModule } from 'ng2-charts';
 import { MyApp } from './app.component';
 import { LoginPage } from '../pages/login/login';
 import { HomePage } from '../pages/home/home';
-import { ProductPage } from '../pages/product/product';
 import { SurveyPage } from '../pages/survey/survey';
 import { SurveyCreatePage } from '../pages/survey/create/survey-create';
 import { SurveyCreate2Page } from '../pages/survey/create/survey-create-page2';
@@ -21,12 +20,13 @@ import { MyProfilePage } from '../pages/my-profile/my-profile';
 import { EditProfileInfor } from '../pages/edit-profile-infor/edit-profile-infor';
 import { TimerComponent } from "../components/timer/timer";
 import { ManagePage } from '../pages/manage/manage';
+import { GroupPage } from '../pages/group/group';
+import { AuthenServiceProvider } from '../providers/authen-service/authen-service';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    ProductPage,
     SurveyPage,
     SurveyCreatePage,
     SurveyCreate2Page,
@@ -40,7 +40,8 @@ import { ManagePage } from '../pages/manage/manage';
     TabsPage,
     MyProfilePage,
     EditProfileInfor,
-    ManagePage
+    ManagePage,
+    GroupPage
   ],
   imports: [
     BrowserModule,
@@ -51,7 +52,6 @@ import { ManagePage } from '../pages/manage/manage';
   entryComponents: [
     MyApp,
     HomePage,
-    ProductPage,
     SurveyPage,
     SurveyCreatePage,
     SurveyCreate2Page,
@@ -63,12 +63,14 @@ import { ManagePage } from '../pages/manage/manage';
     TabsPage,
     MyProfilePage,
     EditProfileInfor,
-    ManagePage
+    ManagePage,
+    GroupPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    { provide: ErrorHandler, useClass: IonicErrorHandler }
+    { provide: ErrorHandler, useClass: IonicErrorHandler },
+    AuthenServiceProvider
   ]
 })
 export class AppModule { }

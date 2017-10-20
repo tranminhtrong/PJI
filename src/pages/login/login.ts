@@ -1,23 +1,51 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
-
+import { NavController, AlertController, LoadingController, Loading, IonicPage } from 'ionic-angular';
+import { AuthenServiceProvider } from '../../providers/authen-service/authen-service';
 import { TabsPage } from '../navigations/tabs';
 
+@IonicPage()
 @Component({
   selector: 'page-login',
-  templateUrl: 'login.html'
+  templateUrl: 'login.html',
 })
 export class LoginPage {
 
-  constructor(public navCtrl: NavController) {
+  loading: Loading;
+  registerCredentials = { email: 'ttran229@csc.com', password: '123' };
+ 
+  constructor(private nav: NavController, private auth: AuthenServiceProvider, private alertCtrl: AlertController, private loadingCtrl: LoadingController) {
+   }
 
+  public login() {
+    this.showLoading()
+    this.auth.login(this.registerCredentials).subscribe(allowed => {
+      if (allowed) {        
+        this.nav.setRoot(TabsPage);
+      } else {
+        this.showError("Access Denied");
+      }
+    },
+      error => {
+        this.showError(error);
+      });
   }
-
-  goTo(event, item): void{
-    this.navCtrl.push(TabsPage, {
-      item: item
+ 
+  showLoading() {
+    this.loading = this.loadingCtrl.create({
+      content: 'Please wait...',
+      dismissOnPageChange: true
     });
-    // this.navCtrl.push(HomePage);
-    //this.navCtrl.setRoot(HomePage);
+    this.loading.present();
+  }
+ 
+  showError(text) {
+    this.loading.dismiss();
+ 
+    let alert = this.alertCtrl.create({
+      title: 'Fail',
+      subTitle: text,
+      buttons: ['OK']
+    });
+    alert.present();
   }
 }

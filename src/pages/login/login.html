@@ -1,73 +1,41 @@
-<!--<ion-header>
-  <ion-navbar>
-    <ion-title>
-      
-    </ion-title>
-  </ion-navbar>
-</ion-header>-->
+<ion-content no-padding class="login-bg">
+    <form (ngSubmit)="login()" #registerForm="ngForm">
+        <div class="" style="margin: 0 10%; margin-top: 25%">
+            <div class="text-center">
+                <h4 class="login-text">Sign in</h4>
+            </div>
 
-<ion-content no-padding style="background: #34495e;">
-    <div class="" style="margin: 0 10%; margin-top: 25%">
-        <div class="text-center">
-            <h4 style="color: #fff">Sign in</h4>
-        </div>
-        <div>
-            <div>
-                <button class="btn btn-success" style="width:100%;margin: 6px 0;">
-                    <span class="glyphicon glyphicon-phone" ></span> 
-                    <span> Phone Number</span>
-                </button>
-            </div>
-            <div>
-                <button class="btn btn-primary" style="width:100%;margin: 6px 0;">
-                    <span class="glyphicon glyphicon-user"></span> 
-                    Facebook
-                </button>
-            </div>
-            <div>
-                <button class="btn btn-danger" style="width:100%;margin: 6px 0;">
-                    <span class="glyphicon glyphicon-envelope"></span> 
-                    Google
-                </button>
-            </div>
-        </div>
-        <div style="margin-top: 5%;">
-            <a>
-                <p class="text-center" style="color:#fff">
-                    <u>Or sign in with your account</u>
-                </p>
-            </a>
-        </div>
-
-        <div style="margin-top: 25%;">
-            <div class="input-group">
-                <span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-envelope"></span></span>
-                <input type="text" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1">
-            </div>
-            <div class="input-group">
-                <span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-lock"></span></span>
-                <input type="text" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1">
-            </div>
-            <button class="btn btn-info" style="width:100%;margin: 6px 0;" (click)="goTo()">
-                <span> Sign in</span>
-            </button>
-            <div style="margin-top: 5%;">
-                <a>
-                    <p class="text-center" style="color:#fff">
-                        <u>Forgot password?</u>
-                    </p>
-                </a>
-            </div>
             <div style="margin-top: 25%;">
-                <a>
-                    <h4 class="text-center" style="color:#fff">
-                        Sign up
-                    </h4>
-                </a>
+                <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon1">
+                        <span class="glyphicon glyphicon-envelope"></span>
+                    </span>
+                    <input type="text" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon1">
+                        <span class="glyphicon glyphicon-lock"></span>
+                    </span>
+                    <input type="text" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1">
+                </div>
+                <button class="btn btn-info login-button" style="width:100%;margin: 6px 0;" (click)="login()">
+                    <span> Sign in</span>
+                </button>
+                <div style="margin-top: 5%;">
+                    <a>
+                        <p class="login-text">
+                            <u>Forgot password?</u>
+                        </p>
+                    </a>
+                </div>
+                <div style="margin-top: 25%;">
+                    <a>
+                        <h4 class="login-text">
+                            Sign up
+                        </h4>
+                    </a>
+                </div>
             </div>
         </div>
-
-
-        <div></div>
-    </div>
+    </form>
 </ion-content>
