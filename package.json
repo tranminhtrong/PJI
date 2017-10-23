@@ -4,7 +4,7 @@
   "author": "Ionic Framework",
   "homepage": "http://ionicframework.com/",
   "private": true,
-  { "engines" : { "node" : "8.7.0" } },
+  "engines" : { "node" : "8.7.0" },
   "scripts": {
     "clean": "ionic-app-scripts clean",
     "build": "ionic-app-scripts build",
