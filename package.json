@@ -10,7 +10,7 @@
     "lint": "ionic-app-scripts lint",
     "ionic:build": "ionic-app-scripts build",
     "ionic:serve": "ionic-app-scripts serve",
-	"postinstall": "ionic serve",
+	"postinstall": "ionic-app-scripts build",
     "start": "node server.js"
   },
   "dependencies": {
@@ -41,7 +41,11 @@
     "ng2-charts": "^1.6.0",
     "rxjs": "5.4.0",
     "sw-toolbox": "3.6.0",
-    "zone.js": "0.8.12"
+    "zone.js": "0.8.12",
+	"@ionic/app-scripts": "2.1.4",
+    "@ionic/cli-plugin-cordova": "1.6.2",
+    "@ionic/cli-plugin-ionic-angular": "1.4.1",
+    "typescript": "2.3.4"
   },
   "devDependencies": {
     "@ionic/app-scripts": "2.1.4",
